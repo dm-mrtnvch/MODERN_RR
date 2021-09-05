@@ -17,13 +17,13 @@ const Accordion = ({items}) => {
         return (
             <React.Fragment key={item.title}>
                 <div
-                    className={`title   `}
+                    className={`title ${active}  `}
                     onClick={() => onTitleClick(index)}
                 >
                     <i className="dropdown icon"></i>
                     {item.title}
                 </div>
-                <div className={`content   `}>
+                <div className={`content ${active}  `}>
                     <p>{item.content}</p>
                 </div>
             </React.Fragment>
